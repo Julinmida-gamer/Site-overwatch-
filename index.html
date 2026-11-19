@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overwatch | Central de Heróis</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body data-pagina="inicio">
+  <header>
+    <a class="logo" href="index.html">OVERWATCH<span> //</span></a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="Page2.html">Heróis</a>
+      <a href="Page3.html">Mapas</a>
+      <a href="Page4.html">Habilidades</a>
+      <a href="Page5.html">Sobre</a>
+    </nav>
+    <button type="button" onclick="alternarTema()">Alternar tema</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="etiqueta">CENTRAL DE INTELIGÊNCIA // OVERWATCH</p>
+      <h1>ESCOLHA SEU <span>HERÓI.</span></h1>
+      <p>Descubra personagens, habilidades, mapas e a história do universo Overwatch.</p>
+
+      <form id="formPesquisa">
+        <input id="campoPersonagem" type="search" placeholder="Digite o nome do personagem..." aria-label="Nome do personagem" required>
+        <button type="submit">Pesquisar</button>
+      </form>
+      <p id="mensagem" aria-live="polite"></p>
+      <div id="resultado" aria-live="polite"></div>
+
+      <a class="link-destaque" href="Page2.html">EXPLORAR TODOS OS HERÓIS →</a>
+    </section>
+
+    <section class="secao">
+      <h2>TRANSMISSÕES ESPECIAIS</h2>
+      <p>Vídeos promocionais fictícios criados para o projeto escolar.</p>
+      <div class="videos">
+        <article class="cartao">
+          <h3>Trailer promocional</h3>
+          <!-- IA: inserir aqui o vídeo promocional gerado com IA. -->
+          <video controls preload="metadata" poster="imagens/poster1.jpg">
+            <source src="videos/trailer.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+        </article>
+        <article class="cartao">
+          <h3>Apresentação de heróis</h3>
+          <!-- IA: inserir aqui o segundo vídeo criado com IA. -->
+          <video controls preload="metadata" poster="imagens/poster2.jpg">
+            <source src="videos/herois.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo HTML5.
+          </video>
+        </article>
+      </div>
+      <p class="nota">Os arquivos de vídeo e as imagens de capa devem ser adicionados à pasta do projeto.</p>
+    </section>
+
+    <section class="secao">
+      <h2>EXPLORE O UNIVERSO</h2>
+      <div class="grade">
+        <a class="cartao" href="Page2.html"><h3>Heróis</h3><p>54 personagens, com história e habilidades.</p></a>
+        <a class="cartao" href="Page3.html"><h3>Mapas</h3><p>Os campos de batalha de cada modo de jogo.</p></a>
+        <a class="cartao" href="Page4.html"><h3>Habilidades</h3><p>Funções, estratégias e poderes de cada herói.</p></a>
+        <a class="cartao" href="Page5.html"><h3>Sobre o jogo</h3><p>A história do universo de Overwatch.</p></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Trabalho de PW sobre Overwatch. Projeto escolar sem fins comerciais; Overwatch pertence à Blizzard Entertainment.</p>
+    <p id="relogio"></p>
+  </footer>
+  <script src="dados.js"></script>
+  <script src="overwatch.js"></script>
+</body>
+</html>

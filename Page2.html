@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heróis | Overwatch</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body data-pagina="herois">
+  <header>
+    <a class="logo" href="index.html">OVERWATCH<span> //</span></a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="Page2.html">Heróis</a>
+      <a href="Page3.html">Mapas</a>
+      <a href="Page4.html">Habilidades</a>
+      <a href="Page5.html">Sobre</a>
+    </nav>
+    <button type="button" onclick="alternarTema()">Alternar tema</button>
+  </header>
+
+  <main class="secao">
+    <h1>Banco de dados de heróis</h1>
+    <p>Pesquise pelo nome ou filtre por função. Clique em um herói para abrir a ficha dele.</p>
+    <form id="formPesquisa">
+      <input id="campoPersonagem" type="search" placeholder="Ex.: Mercy, Genji, D.Va..." aria-label="Nome do personagem">
+      <button type="submit">Pesquisar</button>
+    </form>
+    <div class="filtros">
+        <select id="filtroFuncao" aria-label="Filtrar por função">
+          <option value="">Todas as funções</option>
+          <option value="Tanque">Tanque</option>
+          <option value="Dano">Dano</option>
+          <option value="Suporte">Suporte</option>
+        </select>
+    </div>
+    <p id="mensagem" aria-live="polite"></p>
+    <div id="resultado" class="grade-herois" aria-live="polite"></div>
+  </main>
+  <footer>
+    <p>Trabalho de PW sobre Overwatch. Projeto escolar sem fins comerciais; Overwatch pertence à Blizzard Entertainment.</p>
+    <p id="relogio"></p>
+  </footer>
+  <script src="dados.js"></script>
+  <script src="overwatch.js"></script>
+</body>
+</html>

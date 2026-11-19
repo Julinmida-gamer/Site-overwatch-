@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapas | Overwatch</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body data-pagina="mapas">
+  <header>
+    <a class="logo" href="index.html">OVERWATCH<span> //</span></a>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="Page2.html">Heróis</a>
+      <a href="Page3.html">Mapas</a>
+      <a href="Page4.html">Habilidades</a>
+      <a href="Page5.html">Sobre</a>
+    </nav>
+    <button type="button" onclick="alternarTema()">Alternar tema</button>
+  </header>
+
+  <main class="secao">
+    <h1>Mapas e campos de batalha</h1>
+    <p>Cada cenário tem caminhos, objetivos e desafios próprios. Os mapas estão separados por modo de jogo.</p>
+    <div class="filtros">
+      <select id="filtroModo" aria-label="Filtrar por modo de jogo">
+        <option value="">Todos os modos</option>
+      </select>
+    </div>
+    <div id="listaMapas"></div>
+    <p class="nota">O conjunto de mapas muda a cada temporada. Confira a lista atual no site oficial.</p>
+  </main>
+  <footer>
+    <p>Trabalho de PW sobre Overwatch. Projeto escolar sem fins comerciais; Overwatch pertence à Blizzard Entertainment.</p>
+    <p id="relogio"></p>
+  </footer>
+  <script src="dados.js"></script>
+  <script src="overwatch.js"></script>
+</body>
+</html>
